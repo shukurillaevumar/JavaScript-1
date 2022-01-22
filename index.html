@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="box">
+        <h1><del> My</del> JavaScript</h1>
+    </div>
+
+
+    <div class="responsive-content">
+    <div class="content">
+        <p id="demo-1"></p>
+        <p id="demo-2"></p>
+        <p id="demo-3"></p>
+        <p id="demo-4"></p>
+    </div>
+    </div>
+
+
+    <div class="box-2">
+        <h1>Second JavaScript</h1>
+    </div>
+
+    <div class="responsive-content">
+        <div class="content">
+            <p id="demo-5"></p>
+            <p id="demo-6"></p>
+        </div>
+        </div>
+
+
+        <div class="box-3">
+            <h1>Third JavaScript</h1>
+        </div>
+
+        <div class="responsive-content">
+            <div class="content">
+                <h3>Its a lamp</h3>
+
+                <button class="btn-1" onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn on the light</button>
+
+                <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+
+                <button class="btn-2" onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn off the light</button>
+            </div>
+            </div>
+
+
+
+
+    <script>
+        // let-1
+        let a, b, c, d;
+        a = 10;
+        b = 34;
+        c = "muhammadumar";
+        d = a + b + c;
+        document.getElementById("demo-1").innerHTML = d;
+        // let-2
+        let name, lname;
+        name = "Muhammadumar";
+        lname = "Shukurillaev";
+        document.getElementById("demo-2").innerHTML = name + " " + lname;
+        // let-3
+        let text1, text2, text3;
+        text1 = "Sharipov ";
+        text2 = "Baxodir ,";
+        text3 = "16";
+        document.getElementById("demo-6").innerHTML = text1 + text2 + "His age: " + text3;
+        // const-1
+        const price1 = 22;
+        const price2 = 22;
+        let total = price1 + price2;
+        document.getElementById("demo-3").innerHTML = "Its a " + total;
+        // const-2
+        const pi = 10.05;
+        let person = "Muhammadrizo";
+        let answer = "Who are you?";
+        document.getElementById("demo-4").innerHTML = pi + "<br>" + person + "<br>" + answer;
+        // const-3
+        const car = {type:"Fiat", model:"500", color:"white"};
+        car.color = "red";
+        car.owner = "Muhammadumar";
+        document.getElementById("demo-5").innerHTML = "car owner is a " + car.owner;
+    </script> 
+</body>
+</html>
